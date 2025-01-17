@@ -32,11 +32,11 @@ function determineWinner(playerChoice, ComputerChoice) {
   return "Computer wins!";
 }
 
-function playGame(playerChoice){
-    const ComputerChoice = getComputerChoice();
-    
-    const winner = determineWinner(playerChoice, ComputerChoice);
-    heading.innerHTML = `You picked: ${playerChoice},<br/> computer picked: ${ComputerChoice}.<br/> ${winner}`;
+function playGame(playerChoice) {
+  const ComputerChoice = getComputerChoice();
+
+  const winner = determineWinner(playerChoice, ComputerChoice);
+  heading.innerHTML = `You picked: ${playerChoice},<br/> computer picked: ${ComputerChoice}.<br/> ${winner}`;
 }
 
 rock.addEventListener("click", function () {
@@ -47,6 +47,6 @@ paper.addEventListener("click", function () {
   playGame("paper");
 });
 
-Scissors.addEventListener("click", function () {    
+Scissors.addEventListener("click", function () {
   playGame("Scissors");
 });
